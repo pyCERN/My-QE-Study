@@ -1,0 +1,25 @@
+&CONTROL
+    calculation = 'bands'
+    prefix = 'silicon'
+    pseudo_dir = './pseudo/'
+    outdir = './tmp/'
+/
+&SYSTEM
+    ibrav = 2, celldm(1) = 10.2
+    nat = 2, ntyp = 1
+    ecutwfc = 30.0, nbnd = 8
+/
+&ELECTRONS
+/
+ATOMIC_SPECIES
+    Si  28.085  Si.pbe-n-rrkjus_psl.1.0.0.UPF
+ATOMIC_POSITIONS (alat)
+    Si 0.00 0.00 0.00
+    Si 0.25 0.25 0.25
+K_POINTS (crystal_b)
+    5
+    0.5 0.5 0.5 20
+    0.0 0.0 0.0 20
+    0.0 0.5 0.5 20
+    0.375 0.375 0.75 20
+    0.0 0.0 0.0 0
